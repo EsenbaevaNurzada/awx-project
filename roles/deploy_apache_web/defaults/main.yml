@@ -1,0 +1,4 @@
+---
+# defaults file for deploy_apache_web
+source_file: /etc/ansible/index.html
+destin_folder: /var/www/html

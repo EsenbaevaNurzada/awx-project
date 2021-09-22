@@ -1,0 +1,6 @@
+
+---
+#ansible_user                   : nur01
+environment                    : UAT
+owner                          : Nurmukhamed
+company                        : GROWUP

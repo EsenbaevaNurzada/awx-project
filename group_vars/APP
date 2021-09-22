@@ -1,0 +1,6 @@
+
+---
+#ansible_user                   : nur02
+environment                    : PRODUCTION
+owner                          : Nurmukhamed
+company                        : Ant-Engineering
