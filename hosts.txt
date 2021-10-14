@@ -1,5 +1,5 @@
 [APP]
-linux1 ansible_host=192.168.0.15
+linux1 ansible_host=192.168.0.14
 
 
 [DATABASE]
