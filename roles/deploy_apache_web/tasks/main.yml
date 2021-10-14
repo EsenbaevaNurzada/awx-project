@@ -3,11 +3,7 @@
 
   - name: Install Apache Web server
     yum: name=httpd state=latest
-  - name: Generate INDEX.HTML file
-    template: src=index.html dest={{ destin_folder }}/index.html mode=0555
-    notify:
-    - Restart Apache RedHat 
-
+  
 
   - name: Start WebServer and make it enable on boot
     service: name=httpd state=started enabled=yes
