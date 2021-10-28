@@ -1,11 +1,18 @@
----
-# tasks file for deploy_apache_web
+ - name: Install apache packages
+   yum:
+      name: httpd
+      state: latest
+ - name: ensure apache is running
+   service:
+     name: httpd
+     state: started
+ - name: copy html page 
+   copy: src=index.html dest=/var/www/html/index.html
+   notify: restart
 
-  - name: Install Apache Web server
-    yum: name=httpd state=latest
-  
-
-  - name: Start WebServer and make it enable on boot
-    service: name=httpd state=started enabled=yes
-
-
+# - name: install apache web server
+#   yum: name:httpd state=latest
+    
+# - name: start apache web server and enable it on the every boot
+#   service: name=httpd state=started enabled=yes
+      
