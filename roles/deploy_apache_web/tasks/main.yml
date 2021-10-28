@@ -8,6 +8,4 @@
   - name: Start WebServer and make it enable on boot
     service: name=httpd state=started enabled=yes
 
-  - name: Stop firewalld
-    service: name=firewalld state=stopped
 
